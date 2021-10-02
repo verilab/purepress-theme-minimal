@@ -185,7 +185,6 @@ body, body a {
 .article {
     width: 69vw;
     max-width: min(768px, 100%);
-    -ms-word-wrap: break-word;
     word-wrap: break-word;
     word-break: normal;
 }
@@ -266,12 +265,12 @@ body, body a {
     line-height: 1.66;
 }
 
-.content ul, .content ol {
-    padding-left: 1.2em;
+.content p {
+    text-align: justify;
 }
 
-.content code, .content pre {
-    font-size: 95%;
+.content ul, .content ol {
+    padding-left: 1.2em;
 }
 
 .content img {
@@ -279,6 +278,7 @@ body, body a {
 }
 
 .content pre {
+    font-size: 98%;
     display: block;
     overflow-x: auto;
     overflow-wrap: normal;
@@ -303,7 +303,7 @@ body, body a {
 } */
 
 .content *:not(pre):not(a) code {
-    color: #476582;
+    color: #282c34;
 }
 
 .content table {
