@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+{{ super() }}
+<title>{{ 'Page Not Found - ' + global.site.title }}</title>
+{% endblock %}
+
+{% block body %}
+<main class="main page">
+  <article class="article">
+    <div class="title">
+      <h1 class="title">Page Not Found</h1>
+    </div>
+    <div class="content">
+      <p>🤔你好像迷路了。</p>
+    </div>
+  </article>
+</main>
+{% endblock %}

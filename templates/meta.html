@@ -1,0 +1,8 @@
+{% if entry.created %}
+<div class="meta">
+  {% if entry.created %}
+  <time class="created" datetime="{{ entry.created.strftime('%Y-%m-%d') }}">{{ entry.created.strftime('%B %-d, %Y')
+    }}</time>
+  {% endif %}
+</div>
+{% endif %}

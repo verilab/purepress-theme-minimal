@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+{{ super() }}
+<title>{{ global.site.title }}</title>
+{% endblock %}
+
+{% block body %}
+<div class="site-title">
+  <h1>{{ global.site.title }}</h1>
+</div>
+<main class="main index">
+  <div class="posts">
+    {% for entry in entries %}
+    <div class="post">
+      <span class="title"><a href="{{ entry.url }}">{{ entry.title }}</a></span>
+      <time class="created" datetime="{{ entry.created.strftime('%Y-%m-%d') }}">{{ entry.created.strftime('%B %-d, %Y')
+        }}</time>
+    </div>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}
