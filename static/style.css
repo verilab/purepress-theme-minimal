@@ -211,12 +211,15 @@ body, body a {
     .site-title {
         padding: 4em 0;
     }
+
     .site-title h1 {
         font-size: 4em;
     }
+
     .main {
         margin-bottom: 2.5em;
     }
+
     /* row-gap for flex layout is only supported since Safari 14.5 */
     /* .posts {
         row-gap: 3em;
@@ -224,21 +227,26 @@ body, body a {
     .posts .post {
         width: 100%;
     }
+
     /* alternative for row-gap begin */
     .posts .post {
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
+
     .posts .post:first-of-type {
         margin-top: 0;
     }
+
     /* alternative for row-gap end */
     .posts .post:first-of-type .title {
         font-size: 1.8em;
     }
+
     .article {
         width: 100%;
     }
+
     .article .title {
         padding: 0.8em 0 0.3em;
     }
@@ -323,4 +331,29 @@ body, body a {
 
 .content blockquote, .content blockquote a {
     color: #999;
+}
+
+.content a.footnote-ref {
+    text-decoration: none;
+}
+
+.content a.footnote-ref::before {
+    content: "[";
+}
+
+.content a.footnote-ref::after {
+    content: "]";
+}
+
+.content .footnote {
+    font-size: 97%;
+}
+
+.content .footnote p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.content a.footnote-backref {
+    text-decoration: none;
 }
