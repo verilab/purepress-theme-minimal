@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-family: sans-serif;
+    font-family: 'Cascadia Code', 'JetBrains Mono', sans-serif;
 }
 
 body, body a {
@@ -285,8 +285,16 @@ body, body a {
     max-width: 100%;
 }
 
+.content code {
+    font-family: 'Cascadia Code', 'JetBrains Mono', monospace;
+    font-size: 90%;
+}
+
+.content code:not(.hljs) {
+    color: #913613;
+}
+
 .content pre {
-    font-size: 98%;
     display: block;
     overflow-x: auto;
     overflow-wrap: normal;
