@@ -1,0 +1,11 @@
+{% if global.config.hitokoto_enabled %}
+<footer class="footer" id="hitokoto">
+  <p>己所不欲，勿施于人</p>
+  {% set ns = namespace(found=false) %}
+  {% set ns.cat = '' %}
+  {% for c in global.config.hitokoto_categories %}
+  {% set ns.cat = ns.cat ~ '&c=' ~ c %}
+  {% endfor %}
+  <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto%3Ep{{ ns.cat }}"></script>
+</footer>
+{% endif %}

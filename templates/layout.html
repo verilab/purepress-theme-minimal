@@ -20,7 +20,9 @@
   <div class="body">
     {% block body %}{% endblock %}
   </div>
-  <footer class="footer">
+
+  {% include 'hitokoto.html' %}
+  <footer class="footer" id="footer">
     {% include ['custom/footer.html', 'footer.html'] ignore missing %}
   </footer>
 
