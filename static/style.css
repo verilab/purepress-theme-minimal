@@ -102,7 +102,7 @@ body, body a {
 }
 
 .body {
-    flex-grow: 1;
+    width: 100%;
     max-width: min(1300px, 100%);
     padding: 0 7%;
 }
@@ -248,6 +248,7 @@ body, body a {
     }
 
     /* alternative for row-gap begin */
+
     .posts .post {
         margin-top: 1.5em;
         margin-bottom: 1.5em;
@@ -258,6 +259,7 @@ body, body a {
     }
 
     /* alternative for row-gap end */
+
     .posts .post:first-of-type .title {
         font-size: 1.8em;
     }
