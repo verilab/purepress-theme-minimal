@@ -16,6 +16,14 @@
     </div>
     {% include ['custom/meta.html', 'meta.html'] ignore missing %}
     <div class="content">
+      {% if entry.toc %}
+      <details open>
+        <summary>目录：</summary>
+        <nav>{{ entry.toc_html | safe }}</nav>
+      </details>
+      <hr>
+      {% endif %}
+
       {{ entry.content | safe }}
     </div>
   </article>
