@@ -14,7 +14,7 @@
     {% for entry in entries %}
     <div class="post">
       <span class="title"><a href="{{ entry.url }}">{{ entry.title }}</a></span>
-      <time class="created" datetime="{{ entry.created.strftime('%Y-%m-%d') }}">{{ entry.created.strftime('%B %-d, %Y')
+      <time class="created" datetime="{{ entry.created.strftime('%Y-%m-%d') }}">{{ entry.created.strftime('%B %e, %Y')
         }}</time>
     </div>
     {% endfor %}
